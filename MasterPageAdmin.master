@@ -1,0 +1,70 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs" Inherits="MasterPageAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Gestion de datos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<!--script type="text/javascript" src="layout/scripts/jquery.min.js"></!--script>
+<script type="text/javascript" src="layout/scripts/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.jcarousel.setup.js"></script-->
+    <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+            height: 115px;
+        }
+        </style>
+</head>
+<body id="top">
+    <form id="form1" runat="server">
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header" class="auto-style1">
+    <div id="logo">
+      <h1><a href="index.html">SisFutWeb</a></h1>
+      <p>Sistema Organizador de Resultados de Futbol</p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li class="active"><a href="frmEquipos.aspx">Equipos</a></li>
+        <li><a href="#">Jugadores</a>
+          <ul>
+            <li><a href="frmAdminEquipos.aspx">Consulta de Jugadores</a></li>
+            <li><a href="#">Gestion de Jugadores</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/style-demo.html">Administración</a></li>
+        <li><a href="pages/full-width.html">Full Width</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="container">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+          <p>
+              &nbsp;</p>
+          <p>
+          </p>
+          <p>
+          </p>
+
+      </asp:ContentPlaceHolder>
+</div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="copyright">
+    <p class="fl_right">Copyright 2017 by Steven Adrian Vasco | All Right Reserved | Contactos: 0984505329</p>
+    <br class="clear" />
+  </div>
+</div>
+    </form>
+</body>
+</html>

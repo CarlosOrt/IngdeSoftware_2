@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Liga Santa Ana de Chillogallo</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <!-- Begin Header -->
+  <div id="header">
+    <h1>LIGA DEPORTIVA SANTA ANA DE CHILLOGALLO</h1>
+  </div>
+  <!-- End Header -->
+  <!-- Begin Navigation -->
+  <div id="navtop">
+    <ul>
+      <li><a href="Login1.aspx">Contactos</a></li>
+      <li><a href="Login1.aspx">Iniciar Sesion</a></li>
+      <li><a href="Default.aspx">Home</a></li>
+
+    </ul>
+  </div>
+  <!-- End Navigation -->
+<!--###############################################################################################################################
+  <!-- Begin Left Column -->
+  <div id="leftcolumn">
+    <div id="navigation">
+      <ul>
+        <li><a href="http://ervingilvargas.blogspot.com/2014/03/cargar-datagridview-mediante-c-y-sql.html">> Home</a></li>
+        <li><a href="#">> Page</a></li>
+          <li><a href="#">> Page</a></li>
+          <li><a href="#">> Page</a></li>
+          <li><a href="#">> Page</a></li>
+          <li><a href="#">> Page</a></li>
+        <!--<li><a href="#">> Page</a></li>
+        <li><a href="#">> Page</a></li>
+        <li><a href="#">> Page</a></li>-->
+      </ul>
+    </div>
+    <div class="tableleft">
+      <h3>Temporada:</h3>
+       <h3>2016-2017</h3>
+      <p> 
+          <asp:Label ID="date1" runat="server"></asp:Label>
+          <br />
+        Liverpool 2 - 2 Charlton </p>
+      <!-- TABLES POSITION LEFT BEGIN-->
+        <h4>Tablas de posiciones</h4>
+        <!-- CAT. MAXIMA-->
+        <h4>Máxima</h4>
+        <asp:GridView ID="GViewMax" runat="server">
+      </asp:GridView> 
+      <!-- CAT. PRIMERA-->
+        <h4>Primera</h4>
+        <asp:GridView ID="GViewPr" runat="server">
+          </asp:GridView>
+        <!-- CAT. FEMENINAS-->
+        <h4>Femenina</h4>
+        <asp:GridView ID="GViewFem" runat="server">
+          </asp:GridView>
+        <!-- CAT. NIÑOS-->
+        <h4>Infantil</h4 >
+        <asp:GridView ID="GViewNi" runat="server">
+          </asp:GridView>
+    </div>
+    
+  </div>
+    <!-- TABLES POSITION LEFT END-->
+  <!-- End Left Column -->
+<!--##########################################################################################################################
+  <!-- Begin Right Column -->
+  <div id="maincolumn">
+    <h1>Bienvenidos a la Liga Deportiva Barrial Santa Ana de Chillogallo</h1>
+    <!--<p></p>-->
+    <div class="news">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+        <strong>Últimas Noticias</strong>
+      <p> <a href="#"><asp:Label ID="LblMensaje1" runat="server" Text="Label"></asp:Label></a></p>
+      <p> <a href="#"><asp:Label ID="LblMensaje2" runat="server" Text="Label"></asp:Label></a></p>
+      <p> <a href="#"><asp:Label ID="LblMensaje3" runat="server" Text="Label"></asp:Label></a></p>
+    </div>
+    <h2>Mision</h2>
+    <p>Quisque vulputate. Aliquam condimentum, odio vel ultrices sodales, augue lorem vehicula mi, vel nonummy nisl eros et tortor. Duis laoreet pellentesque lorem. Nam sagittis condimentum libero. Nullam a ante vel massa accumsan elementum. Sed mauris metus, tincidunt quis, blandit at, viverra a, ligula. Pellentesque neque metus, mattis non, tincidunt vitae, euismod scelerisque, nulla. Fusce justo. Donec nec nibh. Sed suscipit bibendum leo. Nulla erat ligula, egestas consequat, sagittis ut, fermentum a, diam. Sed turpis est, aliquam nec, lacinia sed, aliquam non, libero. Ut turpis. Pellentesque viverra pharetra quam.</p>
+    <p> <a href="#">This is a link</a></p>
+    <h4>Headline (h4, h5, h6)</h4>
+    <p>Aenean dapibus, leo vitae eleifend porta, sem ipsum nonummy est, eu fermentum arcu lectus in lacus. Vestibulum tristique metus eu lorem. Pellentesque sed erat. Morbi pharetra condimentum massa. Vestibulum vel nulla at eros porta tempus. Fusce at lorem. Nulla facilisis. Phasellus nisl. Integer id massa nec tellus rutrum pellentesque. Mauris orci mauris, dictum vitae, varius eget, vestibulum quis, risus. Pellentesque dictum, magna vitae pulvinar interdum, orci lacus posuere neque, et lacinia dui eros ut erat. Ut purus. Nullam ac tellus et eros condimentum interdum.</p>
+    <div class="clear"></div>
+  </div>
+  <!-- Pie de pagina -->
+  <div class="clear"></div>
+  <div id="footer"> &copy; Copyright 2007 by Your Name | Design by <a href="http://www.wfiedler-online.de">wfiedler</a><br />
+    Icons by IconArchive (Free for non-commercial use) </div>
+</div>
+<!-- End Wrapper -->
+    </form>
+</body>
+</html>
